@@ -17,11 +17,6 @@ public class AnkiDroidTest {
         assertEquals(expected,addDeck.name);
     }
 
-    @Test public void itShouldAddCardsInDeck(){
-        Deck remeber = new Deck("remember");
-        assertEquals("[what is object,instance of class]", remeber.createDeck("what is object","instance of class").toString());
-    }
-
     @Test public void itShouldAddCardsInDeckInList(){
         Deck remember = new Deck("remember");
         List<Card> expectedCard = new ArrayList<>();

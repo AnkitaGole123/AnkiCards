@@ -9,7 +9,6 @@ public class Deck {
     public Deck(String name) {
         this.name = name;
     }
-
     public List<Card> createDeck(String frontDescription, String backDescription){
         Card cards = new Card(frontDescription,backDescription);
         cardList.add(cards);

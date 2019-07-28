@@ -1,6 +1,7 @@
 package ankidroid;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class Deck {
@@ -9,9 +10,12 @@ public class Deck {
     public Deck(String name) {
         this.name = name;
     }
-    public List<Card> createDeck(String frontDescription, String backDescription){
-        Card cards = new Card(frontDescription,backDescription);
-        cardList.add(cards);
+    public void addCard(String frontDescription, String backDescription){
+        Card card = new Card(frontDescription,backDescription);
+        cardList.add(card);
+
+    }
+    public List<Card>getCards(){
         return cardList;
     }
 }

@@ -1,10 +1,9 @@
 package ankidroid;
-
 import java.util.Objects;
 
 public class Card {
-    private String frontDescription;
-    private String backDescription;
+    public String frontDescription;
+    public String backDescription;
 
     @Override
     public String toString() {
@@ -19,7 +18,6 @@ public class Card {
         return Objects.equals(frontDescription, card.frontDescription) &&
                 Objects.equals(backDescription, card.backDescription);
     }
-
     public Card(String frontDescription, String backDescription) {
         this.frontDescription = frontDescription;
         this.backDescription = backDescription;

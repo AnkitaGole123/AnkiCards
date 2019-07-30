@@ -9,7 +9,8 @@ public class AnkiCard {
         remember.addCard("what is object", "instance of class");
         remember.addCard("what is class", "blueprint");
         remember.addCard("what is TDD", "Test Driven Development");
-        System.out.println(remember.getCards());
+        remember.addCard("what is shortcut key for format", "ctrl +alt +k");
+
         for (Card cards: remember.getCards()){
             Scanner input = new Scanner(System.in);
             System.out.println(cards.frontDescription);

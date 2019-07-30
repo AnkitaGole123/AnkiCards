@@ -7,4 +7,7 @@
 }, {
   "frontDescription" : "what is TDD",
   "backDescription" : "Test Driven Development"
+}, {
+  "frontDescription" : "what is shortcut key for format",
+  "backDescription" : "ctrl +alt +k"
 } ]

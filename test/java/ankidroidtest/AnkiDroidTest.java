@@ -5,6 +5,7 @@ import ankidroid.Deck;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,12 +18,13 @@ public class AnkiDroidTest {
         assertEquals(expected,addDeck.name);
     }
 
-    @Test public void itShouldAddCardsInDeckInList(){
+    @Test public void itShouldAddCardsInDeckInList() throws IOException {
         Deck remember = new Deck("remember");
+        remember.addCard("what is object", "instance of class");
         List<Card> expectedCard = new ArrayList<>();
         Card cards = new Card("what is object","instance of class");
         expectedCard.add(cards);
-        assertEquals(expectedCard,remember.createDeck("what is object", "instance of class"));
+        assertEquals(expectedCard,remember.getCards());
     }
 }
 

@@ -1,0 +1,10 @@
+[ {
+  "frontDescription" : "what is object",
+  "backDescription" : "instance of class"
+}, {
+  "frontDescription" : "what is class",
+  "backDescription" : "blueprint"
+}, {
+  "frontDescription" : "what is TDD",
+  "backDescription" : "Test Driven Development"
+} ]
